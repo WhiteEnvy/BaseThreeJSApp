@@ -1,8 +1,5 @@
 function resetCamera(positionZ) {
-//	camera.lookAt( newWardrobe.THREEobj );
 	camera.position.copy(cameraPositions);
-//	camera.position.z = 500;
-//	camera.zoom = 3;
 	camera.updateProjectionMatrix();
 	updateLightPosition();
 	light.position.y = 0;
@@ -31,7 +28,6 @@ function updateLightPosition(){
 	light.position.x += 200;		
 	light.position.z += 500;		
 	light.position.y -= 100;
-//	light.position.z += 200;
 }
 
 function resetControlsPotision() {

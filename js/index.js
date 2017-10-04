@@ -2,8 +2,6 @@ init();
 animate();
 
 function init() {
-//	document.body.appendChild(container);
-
 	scene = new THREE.Scene();
 	camera = new THREE.PerspectiveCamera(55, container.offsetWidth / container.offsetHeight, 0.1, 3000);
 	camera.position.copy(cameraPositions);
@@ -24,7 +22,7 @@ function init() {
 	renderer.shadowMapEnabled = true;
 	container.appendChild(renderer.domElement);
     canvas = document.getElementsByTagName('canvas')[0];
-//	addStats();
+	addStats();
 	addOrbitControls();
 	addEventListeners();
 	resetControlsPotision();
